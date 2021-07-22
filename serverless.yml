@@ -37,6 +37,7 @@ functions:
       - http:
           path: cadastro
           method: post
+          cors: true
   get:
     # Defines an HTTP API endpoint that calls the main function in get.js
     # - path: url path is /notes/{id}
@@ -46,4 +47,5 @@ functions:
       - http:
           path: cadastro/{id}
           method: get
+          cors: true
 

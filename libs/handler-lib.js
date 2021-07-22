@@ -15,6 +15,10 @@ export default function handler(lambda) {
     return {
       statusCode,
       body: JSON.stringify(body),
+      headers: {
+        "Access-Control-Alow-Origin": "*",
+        "Access-Control-Alow-Credentials": true,
+      }
     };
   };
 }

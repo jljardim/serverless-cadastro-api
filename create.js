@@ -12,6 +12,9 @@ export const main = handler(async (event, context) => {
       // The attributes of the item to be created
       codigoID: "123", // The id of the author
       nomeID: uuid.v1(), // A unique uuid
+      "email":"",
+      "endereco":"",
+      "telefone":"",
       content: data.content, // Parsed from request body
       attachment: data.attachment, // Parsed from request body
       createdAt: Date.now(), // Current Unix timestamp
